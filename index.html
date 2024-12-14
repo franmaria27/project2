@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- CSS Files -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	
+		<title>Title of Your Website</title>
+	
+	</head>
+
+	<body>
+
+		<!-- It is almost always a good idea to have a large div wrap out the entire contents of your html body. In this example, that div is "container" This will make placement of other HTML elements easier. -->
+
+		<div class="container">
+
+			 <!-- Navigation Bar  -->
+
+			  <!-- In order to build our nav bar, use lists. <ul> is basically the container of the list and <li> is a single element in the list.
+
+			  To insert a link in the nav bar, simply put an anchor tag <a> inside a <li>. 
+
+			  For the link's href, we use id's which is another CSS selector (ID uses "#" as opposed to a class's ".". This makes sure that clicking on a link will automatically sroll down to a specific section.
+
+			  Finally, notice how our HTML is divided used <section> instead of <div>.-->
+
+			<section class="navigation">
+				<ul>
+					<li><a href="#four">Link 4</a></li>
+					<li><a href="#three">Link 3</a></li>
+					<li><a href="#two">Link 2</a></li>
+					<li><a href="#one">Link 1</a></li>
+					<li><a href="#home">Home</a></li>
+				</ul>
+			</section>
+
+			 <!-- Hero Image  -->
+			<section class="home" id="home">
+				<h1>Title of Website</h1>
+				
+			</section>
+
+			 <!-- First Section  -->
+			<section class="one" id="one">
+				<h2>Chapter One</h2>
+			</section>
+
+			 <!-- Second Section  -->
+			<section class="two" id="two">
+				<h2>Chapter Two</h2>
+			</section>
+
+			 <!-- Third Section  -->
+			<section class="three" id="three">
+				<h2>Chapter Three</h2>
+			</section>
+
+			 <!-- Fourth Section  -->
+			<section class="four" id="four">
+				
+			</section>
+
+			 <!-- Fifth Section  -->
+			<section class="footer" id="five">
+				
+			</section>
+
+		</div>
+
+	</body>
+
+</html>

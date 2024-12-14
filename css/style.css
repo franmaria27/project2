@@ -1,0 +1,425 @@
+
+@font-face {
+	font-family: 'FiraCode Bold';
+	src: url(../fonts/FiraCode-Bold.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Inter Regular';
+	src: url(../fonts/Inter-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Inter thin';
+	src: url(../fonts/Inter-skinny.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'ArchivoBlack-Regular';
+	src: url(../fonts/ArchivoBlack-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+
+body {
+	background: black;
+}
+
+.container {
+	position: relative;
+}
+
+.circle {
+	width: 450px;
+	height: 450px;
+	background-color: #25A1F4;
+	border-radius: 100%;
+	position: fixed;
+	left: 1%;
+	bottom: 40%;
+}
+
+
+.circle-2 {
+	width: 180px;
+	height: 180px;
+	background-color: #25A1F4;
+	border-radius: 100%;
+	position: fixed;
+	left: 80%;
+	bottom: 13%;
+}
+
+
+
+.title {
+	font-family: "FiraCode Bold";
+	font-size: 3.5em;
+	height: 20px;
+	width: 400px;
+	color: white;
+	position: fixed;
+	left: 5%;
+	bottom: 77%;
+	line-height: 85px;
+
+}
+
+.dates {
+	font-family: "FiraCode Bold";
+	font-size: 1.5em;
+	height: 20px;
+	width: 300px;
+	color: white;
+	position: fixed;
+	left: 75%;
+	bottom: 25%;
+	line-height: 47px;
+
+}
+
+
+
+.home {
+	width: 100vw;
+	height: 100vh;
+	background: url(../images/tv.jpg) center fixed no-repeat;
+	background-size: cover;
+}
+
+/* Navigation Bar */
+.navigation {
+	width: 100vw;
+	height: 110px;
+	background: black;
+	position: fixed; /* Here, we use fixed positioning so that our nav bar always stays on top of the page */
+	z-index: 1; /* having a z-index larger than 0 ensures that our nav bar is on top of other content on the page */
+}
+
+ul.nav {
+	list-style: none; /* this removes bullet points on our "list" */
+	margin-top: 10px;
+	margin-left: -300px;
+	margin-right: 20px;
+	font-size: 1.3em;
+	width:490px;
+	position: absolute;
+	left: 50%;
+}
+
+
+li {
+	float: right; /* makes all of our links on the right side of the nav bar */
+	margin-left: 25px; 
+	margin-top: 20px; /* gives 20px of spacing between each text link */
+}
+
+ul.home_btn li {
+	float: left;
+	margin-left: 50px;
+}
+
+
+a {
+	color: white;
+	text-decoration: none; /* removes the underline and blue color of our text links */
+	font-family: "Inter Regular";
+}
+
+li:last-child { /* last-child only targets the last item on our list, which is our home page link */
+	margin-left: 0px;
+	margin-top:20px;
+}
+
+/* For Headers/Titles */
+
+.four {
+	font-family: "Roboto-Regular";
+	font-size: 1.8em;
+	margin: 3px;
+	margin-top: 10px;
+	width: 600px;
+	height: 20px;
+	float: left;
+	color: white;
+
+	
+}
+
+.line {
+	width: 900px;
+	height: 2px;
+	background-color: white;
+	position: absolute;
+	left: 0.5%;
+	top: 121.5%;
+}
+
+.line-2 {
+	width: 3000px;
+	height: 0px;
+	border: solid white 1px;
+	position: absolute;
+	left: 2px;
+	top: 3060px;
+}
+
+.copyright {
+	font-family: "FiraCode Bold";
+	font-size: 0.9em;
+	height: 20px;
+	width: 600px;
+	color: white;
+	position: absolute;
+	left: 4px;
+	bottom: -2150px;
+}
+
+.socials {
+	background: url(../images/socials.png) center no-repeat;
+	background-size: 20%;
+	width: 100vw;
+	height: 20vh;
+	right: -710px;
+	top: 3050px;
+	position: absolute;
+}
+
+.small-circle {
+	width: 60px;
+	height: 60px;
+	background-color: #25A1F4;
+	border-radius: 100%;
+	right: 30%;
+	top: 117%;
+	position: absolute;
+}
+
+.small-circle-2 {
+	width: 60px;
+	height: 60px;
+	background-color: #25A1F4;
+	border-radius: 100%;
+	right: 23%;
+	top: 117%;
+	position: absolute;
+}
+
+.small-circle-3 {
+	width: 60px;
+	height: 60px;
+	background-color: #25A1F4;
+	border-radius: 100%;
+	right: 16%;
+	top: 117%;
+	position: absolute;
+}
+
+.highlights-1 {
+	font-family: "ArchivoBlack-Regular";
+	font-size: 5em;
+	height: 20px;
+	width: 700px;
+	color: white;
+	position: absolute;
+	left: 55%;
+	top: 127%;
+	line-height: 47px;
+}
+
+/* For Subheaders */
+.locals {
+	height: 50px;
+	width: 200px;
+	background-color: white;
+	position: absolute;
+	border-radius: 45%;
+	left:9%;
+	top: 137%;
+	position: absolute;
+
+}
+
+.interviews {
+	height: 50px;
+	width: 200px;
+	background-color: white;
+	position: absolute;
+	border-radius: 45%;
+	left:26%;
+	top: 137%;
+
+}
+
+.features {
+	height: 50px;
+	width: 200px;
+	background-color: white;
+	position: absolute;
+	border-radius: 45%;
+	left:43%;
+	top: 137%;
+}
+
+.watchlists {
+	height: 50px;
+	width: 200px;
+	background-color: white;
+	position: absolute;
+	border-radius: 45%;
+	left:60%;
+	top: 137%;
+}
+.news {
+	height: 50px;
+	width: 200px;
+	background-color: white;
+	position: absolute;
+	border-radius: 45%;
+	left:77%;
+	top: 137%;
+}
+
+
+.locals-text {
+	font-family: "Roboto-Regular";
+	font-size: 1.5em;
+	color: black;
+	position: absolute;
+	right: 84%;
+	top: 138.5%;
+}
+
+.splide {
+	width: 100vw;
+	height: 900px;
+	position: absolute;
+	top: 1450px;
+}
+
+.image {
+	background: url(../images/pic-1.jpg) no-repeat;
+	background-size: cover;
+	width: 100vw;
+	height: 700px;
+	border-radius: 10%;
+}
+
+.mark {
+	background: url(../images/markruffalo.png) no-repeat;
+	background-size: cover;
+	width: 100vw;
+	height: 700px;
+	border-radius: 10%;
+}
+
+.car {
+	background: url(../images/car.jpg)no-repeat;
+	background-size: cover;
+	width: 100vw;
+	height: 700px;
+	border-radius: 10%;
+}
+.image-1-cap {
+	font-family: "Inter Regular";
+	font-size: 2em;
+	width: 950px;
+	color: white;
+	position: absolute;
+	right: 45%;
+	top: 215%;
+}
+
+
+.hoodie {
+	background: url(../images/hoodie.avif) center no-repeat;
+	background-size: cover;
+	width: 27vw;
+	height: 40vh;
+	left: 4%;
+	top: 240%;
+	position: absolute;
+
+}
+
+.tee {
+	background: url(../images/tee.avif) center no-repeat;
+	background-size: cover;
+	width: 27vw;
+	height: 40vh;
+	left: 36%;
+	top: 240%;
+	position: absolute;
+}
+
+.hat {
+	background: url(../images/hat.jpg) center no-repeat;
+	background-size: cover;
+	width: 27vw;
+	height: 40vh;
+	left: 69%;
+	top: 240%;
+	position: absolute;
+}
+
+
+.interviews-text {
+	font-family: "Roboto-Regular";
+	font-size: 1.5em;
+	color: black;
+	position: absolute;
+	right: 65%;
+	top: 138.5%;
+}
+
+.merch-text {
+	font-family: "ArchivoBlack-Regular";
+	font-size: 3.5em;
+	color: white;
+	position: absolute;
+	right: 76%;
+	top: 233%;
+}
+
+.features-text {
+	font-family: "Roboto-Regular";
+	font-size: 1.5em;
+	color: black;
+	position: absolute;
+	right: 49%;
+	top: 138.5%;
+}
+
+.watchlists-text {
+	font-family: "Roboto-Regular";
+	font-size: 1.5em;
+	color: black;
+	position: absolute;
+	right: 32%;
+	top: 138.5%;
+}
+
+.news-text {
+	font-family: "Roboto-Regular";
+	font-size: 1.5em;
+	color: black;
+	position: absolute;
+	right: 16%;
+	top: 138.5%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
